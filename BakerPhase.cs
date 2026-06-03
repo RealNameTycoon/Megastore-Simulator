@@ -1,0 +1,8 @@
+public enum BakerPhase
+{
+	IDLE,
+	FETCHING_TRAYS,
+	WAITING_FOR_COOK,
+	RESTOCKING,
+	RETURNING_TRAYS
+}
