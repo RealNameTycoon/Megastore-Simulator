@@ -1,0 +1,12 @@
+public static class StartupEvents
+{
+	public static string RESTOCK_ZONES_INITIALIZED = "RESTOCK_ZONES_INITIALIZED";
+
+	public static string BOXES_INITIALIZED = "BOXES_INITIALIZED";
+
+	public static string PALLETS_INITIALIZED = "PALLETS_INITIALIZED";
+
+	public static string SPAWN_MANAGER_INITIALIZED = "SPAWN_MANAGER_INITIALIZED";
+
+	public static string TEMPERATURE_ZONES_INITIALIZED = "TEMPERATURE_ZONES_INITIALIZED";
+}

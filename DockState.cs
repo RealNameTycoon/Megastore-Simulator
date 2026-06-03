@@ -1,0 +1,7 @@
+public enum DockState
+{
+	TRUCK_IDLE,
+	TRUCK_INCOMING,
+	TRUCK_ARRIVED,
+	TRUCK_WAITING_GATE
+}

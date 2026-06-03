@@ -1,0 +1,8 @@
+public enum EmployeeRole
+{
+	CASHIER,
+	RESTOCKER,
+	BAKERY_STAFF,
+	UNLOADER,
+	SEAFOOD_STAFF
+}

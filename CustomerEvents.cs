@@ -1,0 +1,24 @@
+public static class CustomerEvents
+{
+	public static string CUSTOMER_SHOP_STARTED = "CUSTOMER_SHOP_STARTED";
+
+	public static string CUSTOMER_SHOP_OVER = "CUSTOMER_SHOP_OVER";
+
+	public static string VENDING_CUSTOMER_SHOP_OVER = "VENDING_CUSTOMER_SHOP_OVER";
+
+	public static string CUSTOMER_SHOP_HALTED = "CUSTOMER_SHOP_HALTED";
+
+	public static string SHOP_CLOSED = "SHOP_CLOSED";
+
+	public static string SHOP_OPENED = "SHOP_OPENED";
+
+	public static string CUSTOMER_LEAVE_STARTED = "CUSTOMER_LEAVE_STARTED";
+
+	public static string LEAVE_STARTED_COMPLAINER = "LEAVE_STARTED_COMPLAINER";
+
+	public static string VENDING_LEAVE_STARTED_COMPLAINER = "VENDING_LEAVE_STARTED_COMPLAINER";
+
+	public static string VENDING_CUSTOMER_LEAVE_STARTED = "VENDING_CUSTOMER_LEAVE_STARTED";
+
+	public static string CUSTOMER_HALTED = "LEAVE_STARTED";
+}

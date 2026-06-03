@@ -1,0 +1,7 @@
+public enum CustomerBehavior
+{
+	PURCHASE,
+	OVER_PRICE_COMPLAINT,
+	NO_STOCK_COMPLAINT,
+	SKIP
+}
