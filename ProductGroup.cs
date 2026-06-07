@@ -13,5 +13,6 @@ public enum ProductGroup
 	SPORTS = 6,
 	VENDING = 7,
 	FISH = 8,
+	BEACH = 9,
 	EQUIPMENTS = 1000
 }

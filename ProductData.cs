@@ -47,6 +47,12 @@ public class ProductData : ScriptableObject
 
 	public bool isVerticalBoxLayout;
 
+	public bool isInflatable;
+
+	public Vector3 inflatedScale = Vector3.one;
+
+	public Vector3 deflatedScale = Vector3.one;
+
 	public Vector3[] localPositions;
 
 	public Vector3[] eulerAngles;

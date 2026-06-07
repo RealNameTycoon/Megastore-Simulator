@@ -135,7 +135,7 @@ public class Furniture : MonoBehaviour, MoveableObjectInterface, MoveableHolderI
 
 	public virtual List<(KeyCode, (string, Action))> GetExtraButtonActions()
 	{
-		if (type == FurnitureType.FITTING_ROOM || type == FurnitureType.MANNEQUIN_SPORT)
+		if (type == FurnitureType.FITTING_ROOM || type == FurnitureType.MANNEQUIN_SPORT || type == FurnitureType.INFLATABLE_POOL)
 		{
 			return new List<(KeyCode, (string, Action))> { (KeyCode.F, ("pack", delegate
 			{
@@ -147,9 +147,9 @@ public class Furniture : MonoBehaviour, MoveableObjectInterface, MoveableHolderI
 
 	public virtual bool CanPack()
 	{
-		if (type != FurnitureType.FITTING_ROOM)
+		if (type != FurnitureType.FITTING_ROOM && type != FurnitureType.MANNEQUIN_SPORT)
 		{
-			return type == FurnitureType.MANNEQUIN_SPORT;
+			return type == FurnitureType.INFLATABLE_POOL;
 		}
 		return true;
 	}

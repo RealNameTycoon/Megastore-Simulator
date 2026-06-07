@@ -298,7 +298,7 @@ public class SpawnManager : SingletonBehaviour<SpawnManager>
 	private void InitializePlaceables()
 	{
 		bool flag = GenericDataSerializer.LoadBool("VEGETABLE_SHELF_REFUNDED");
-		for (int i = 0; i < 52; i++)
+		for (int i = 0; i < 58; i++)
 		{
 			PlaceableType placeableType = (PlaceableType)i;
 			int placeableCount = GetPlaceableCount(placeableType);
@@ -353,7 +353,7 @@ public class SpawnManager : SingletonBehaviour<SpawnManager>
 
 	private void InitializeFurnitures()
 	{
-		for (int i = 0; i < 15; i++)
+		for (int i = 0; i < 16; i++)
 		{
 			FurnitureType type = (FurnitureType)i;
 			int furnitureCount = GetFurnitureCount(type);

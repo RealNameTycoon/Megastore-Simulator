@@ -108,10 +108,10 @@ public class HandScanner : HotkeyClickable
 		RepaintScannerUI(type);
 		if (scannerCartWindow.IsOpen() && base.IsPicked)
 		{
-			ProductData productData = SingletonBehaviour<ProductPool>.Instance.GetProductData(type);
-			if (productData != null)
+			ProductData anyProductData = SingletonBehaviour<ProductPool>.Instance.GetAnyProductData(type);
+			if (anyProductData != null)
 			{
-				SingletonBehaviour<ProductInfoWindow>.Instance.Open(productData);
+				SingletonBehaviour<ProductInfoWindow>.Instance.Open(anyProductData);
 			}
 		}
 	}

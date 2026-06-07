@@ -89,6 +89,10 @@ public class OrderManager : SingletonBehaviour<OrderManager>
 		{
 			ProductGroup.FISH,
 			10
+		},
+		{
+			ProductGroup.BEACH,
+			10
 		}
 	};
 

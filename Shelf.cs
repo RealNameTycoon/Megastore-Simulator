@@ -740,7 +740,11 @@ public class Shelf : Interactable, Restockable
 			}
 			return true;
 		case ShelfType.FREEZER:
-			return parentPlaceableType == PlaceableType.FREEZER;
+			if (parentPlaceableType != PlaceableType.FREEZER && parentPlaceableType != PlaceableType.FREEZER_ISLAND)
+			{
+				return parentPlaceableType == PlaceableType.FREEZER_ISLAND_CORNER;
+			}
+			return true;
 		case ShelfType.VENDING_MACHINE:
 			return parentPlaceableType == PlaceableType.VENDING_MACHINE;
 		case ShelfType.WALL_SHELF:
@@ -809,6 +813,16 @@ public class Shelf : Interactable, Restockable
 			if (parentPlaceableType != PlaceableType.TOY_BALL_SHELF)
 			{
 				return parentPlaceableType == PlaceableType.TOY_BALL_SHELF_ROW;
+			}
+			return true;
+		case ShelfType.BEACH_SHELF:
+			return parentPlaceableType == PlaceableType.BEACH_SHELF;
+		case ShelfType.BEACH_BASKET_SHELF:
+			return parentPlaceableType == PlaceableType.BEACH_BASKET_SHELF;
+		case ShelfType.TOWEL_SHELF:
+			if (parentPlaceableType != PlaceableType.TOWEL_STAND_TALL && parentPlaceableType != PlaceableType.TOWEL_STAND_SHORT)
+			{
+				return parentPlaceableType == PlaceableType.BEACH_SHELF;
 			}
 			return true;
 		default:

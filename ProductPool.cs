@@ -220,6 +220,30 @@ public class ProductPool : SingletonBehaviour<ProductPool>
 		{
 			ProductType.TOY_BALL_SHELF,
 			PlaceableType.TOY_BALL_SHELF
+		},
+		{
+			ProductType.FREEZER_ISLAND,
+			PlaceableType.FREEZER_ISLAND
+		},
+		{
+			ProductType.FREEZER_ISLAND_CORNER,
+			PlaceableType.FREEZER_ISLAND_CORNER
+		},
+		{
+			ProductType.BEACH_SHELF,
+			PlaceableType.BEACH_SHELF
+		},
+		{
+			ProductType.BEACH_BASKET_SHELF,
+			PlaceableType.BEACH_BASKET_SHELF
+		},
+		{
+			ProductType.TOWEL_STAND_TALL,
+			PlaceableType.TOWEL_STAND_TALL
+		},
+		{
+			ProductType.TOWEL_STAND_SHORT,
+			PlaceableType.TOWEL_STAND_SHORT
 		}
 	};
 
@@ -252,6 +276,10 @@ public class ProductPool : SingletonBehaviour<ProductPool>
 		{
 			ProductType.MANNEQUIN_SPORT,
 			FurnitureType.MANNEQUIN_SPORT
+		},
+		{
+			ProductType.INFLATABLE_POOL,
+			FurnitureType.INFLATABLE_POOL
 		},
 		{
 			ProductType.TRASH_FURNITURE,

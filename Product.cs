@@ -79,7 +79,7 @@ public class Product : MonoBehaviour
 		}
 	}
 
-	public void OnRemovedFromShelf()
+	public virtual void OnRemovedFromShelf()
 	{
 		if (renderersCulled && renderersEnabled)
 		{

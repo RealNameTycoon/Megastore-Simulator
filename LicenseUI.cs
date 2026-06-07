@@ -99,6 +99,10 @@ public class LicenseUI : SelectableUI
 		{
 			ProductGroup.FISH,
 			3
+		},
+		{
+			ProductGroup.BEACH,
+			3
 		}
 	};
 

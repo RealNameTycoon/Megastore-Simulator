@@ -97,6 +97,10 @@ public class StockManager : SingletonBehaviour<StockManager>
 		{
 			ProductGroup.FISH,
 			2.7f
+		},
+		{
+			ProductGroup.BEACH,
+			2.7f
 		}
 	};
 
@@ -136,6 +140,10 @@ public class StockManager : SingletonBehaviour<StockManager>
 		},
 		{
 			ProductGroup.FISH,
+			1.3f
+		},
+		{
+			ProductGroup.BEACH,
 			1.3f
 		}
 	};
@@ -574,7 +582,7 @@ public class StockManager : SingletonBehaviour<StockManager>
 
 	private bool IsBoostedProduct(ProductData data)
 	{
-		if (data.productGroup == ProductGroup.GROCERY || data.productGroup == ProductGroup.BAKERY)
+		if (data.productGroup == ProductGroup.GROCERY || data.productGroup == ProductGroup.BAKERY || data.productGroup == ProductGroup.BEACH)
 		{
 			return true;
 		}

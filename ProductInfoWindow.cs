@@ -51,12 +51,22 @@ public class ProductInfoWindow : SingletonBehaviour<ProductInfoWindow>
 			currentProductType = data.type;
 			productImage.sprite = data.productSprite;
 			ProductNameTitle.text = Locale.GetWord(data.type.ToString());
-			int availableStockOnShelves = SingletonBehaviour<StockManager>.Instance.GetAvailableStockOnShelves(data.type);
-			int availableStockInBoxes = SingletonBehaviour<StockManager>.Instance.GetAvailableStockInBoxes(data.type);
-			onShelvesCount.text = availableStockOnShelves.ToString();
-			offShelvesCount.text = availableStockInBoxes.ToString();
-			onShelvesCount.color = ((availableStockOnShelves > 0) ? normalStockColor : UIManager.RedColor);
-			offShelvesCount.color = ((availableStockInBoxes > 0) ? normalStockColor : UIManager.RedColor);
+			if (data.type >= ProductType.NONCONSUMABLE_START)
+			{
+				onShelvesCount.text = "-";
+				offShelvesCount.text = "-";
+				onShelvesCount.color = normalStockColor;
+				offShelvesCount.color = normalStockColor;
+			}
+			else
+			{
+				int availableStockOnShelves = SingletonBehaviour<StockManager>.Instance.GetAvailableStockOnShelves(data.type);
+				int availableStockInBoxes = SingletonBehaviour<StockManager>.Instance.GetAvailableStockInBoxes(data.type);
+				onShelvesCount.text = availableStockOnShelves.ToString();
+				offShelvesCount.text = availableStockInBoxes.ToString();
+				onShelvesCount.color = ((availableStockOnShelves > 0) ? normalStockColor : UIManager.RedColor);
+				offShelvesCount.color = ((availableStockInBoxes > 0) ? normalStockColor : UIManager.RedColor);
+			}
 			isOpen = true;
 			canvasGroup.DOKill();
 			canvasGroup.DOFade(1f, 5f).SetSpeedBased(isSpeedBased: true).SetEase(Ease.Linear);

@@ -76,7 +76,8 @@ public class EmployeeCard : SelectableUI
 		ProductGroup.ELECTRONICS,
 		ProductGroup.MUSIC,
 		ProductGroup.SPORTS,
-		ProductGroup.VENDING
+		ProductGroup.VENDING,
+		ProductGroup.BEACH
 	};
 
 	private List<int> checkoutOptions = new List<int>();
